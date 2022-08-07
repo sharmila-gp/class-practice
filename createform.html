@@ -1,0 +1,132 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" />
+    <meta name="description" content "example for html form">
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <style>
+      form {
+        width: 50%;
+        background-color: lemonchiffon;
+      }
+      legend {
+        color: green;
+        align-content: center;
+      }
+      label {
+        color: rgb(47, 0, 255);
+        font-weight: bold;
+        vertical-align: middle;
+      }
+      table {
+        /* padding: auto; */
+        width: 500px;
+      }
+      td {
+        width: 50%;
+      }
+      input,
+      select,
+      textarea {
+        width: 250px;
+        border-radius: 5px;
+        border-width: 1px;
+      }
+      input[type="radio"] {
+        width: fit-content;
+      }
+    </style>
+    <title>Personal details</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend><h2>Personal Details</h2></legend>
+        <!-- <br /><br /> -->
+        <table>
+          <tr>
+            <td><label for="txtName"> Name:</label></td>
+            <td><input type="text" name="txtName" id="txtname" /></td>
+          </tr>
+          <tr>
+            <td><label for="password">Password:</label></td>
+            <td><input type="text" name="password" id="pwd" /></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email id:</label></td>
+            <td><input type="text" name="emailname" id="emailid" /></td>
+          </tr>
+          <tr>
+            <td><label for="gender">Gender:</label></td>
+            <td>
+              <input type="radio" name="radiobutton" id="radbut" />
+              <label>Male</label>
+              <input type="radio" name="radiobutton" id="radbut" /><label
+                >Female</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Date">Date of Birth:</label></td>
+            <td><input type="date" id="date" /></td>
+          </tr>
+          <tr>
+            <td><label for="phonenumber">Phone number:</label></td>
+            <td><input type="text" name="ph_num" id="ph_num" /></td>
+          </tr>
+          <!-- <br /><br /> -->
+        </table>
+        <legend><h2>Educational details</h2></legend>
+        <table>
+          <tr>
+            <td><label for="Degree">Degree:</label></td>
+            <td>
+              <select name="degree" id="degree">
+                <option>--Select degree</option>
+                <option>B.Tech</option>
+                <option>BE</option>
+                <option>B.Com</option>
+                <option>Bsc</option>
+                <option>BA</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="specialisation">Specialization:</label></td>
+            <td>
+              <select name="specialisation" id="spl">
+                <option>--Select Specialisation</option>
+                <option>Computerscience</option>
+                <option>Maths</option>
+                <option>computer application</option>
+                <option>ECE</option>
+                <option>EEE</option>
+                <option>IT</option>
+                <option>ME</option>
+                <option>English</option>
+                <option>Tamil</option>
+                <option>Economics</option>
+                <option>Commerce</option>
+                <option>History</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="address">Address:</label></td>
+            <td>
+              <textarea
+                name="textarea"
+                cols="35"
+                rows="5"
+                id="textarea"
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+        <br />
+        <!-- <br /> -->
+        <button type="submit" value="submit">submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
