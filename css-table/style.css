@@ -1,0 +1,28 @@
+table, td, th{
+	border:1px solid red;
+	font-family:"arial",serief;
+	font-size:14px;
+	margin:120px auto;
+	padding:8px;
+}
+table{
+	border-collapse:collapse;
+	width:60%; 
+}
+th{
+	background-color:lightgreen;
+	text-align:left;
+}
+tr:nth-child(even)
+{
+	background-color:lightgreen;
+}
+tr:nth-child(odd)
+{
+	background-color:yellow;
+}
+caption{
+	padding:10px;
+	background-color:pink;
+	border:1px solid magenta;
+}
